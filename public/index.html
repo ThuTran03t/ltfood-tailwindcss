@@ -5,7 +5,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="../public/style.css">
 </head>
-<body class="text-lime-900 px-12 py-9 font-mono">
+<body class="text-lime-900  font-mono">
     <div>
         <!-- content -->
         <div>
@@ -19,7 +19,7 @@
                 <!-- ---------------- -->
                 <ul class="text-gray-700 bg-blue-50  border-b border-blue-100 flex justify-evenly ">
                     <li >
-                        <a href="#">
+                        <a href="#" class="hover:">
                             <span>Home</span>
                         </a>
                     </li>
@@ -52,41 +52,43 @@
                 <h2 class="text-gray-700 text-3xl">Recipes</h2>
                 <h3 class="font-bold uppercase">For Luyen Tap Tailwind CSS</h3>
             </header>
-            <!-- scroll -->
-            <!-- scroll -->
-            <!-- <div class="snap-x ">
-                <div class="-scroll-margin-inline-end ">
-                  <img src="https://images.unsplash.com/photo-1604999565976-8913ad2ddb7c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&h=160&q=80" />
-                </div>
-                <div class="sscroll-margin-inline-end">
-                  <img src="https://images.unsplash.com/photo-1540206351-d6465b3ac5c1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&h=160&q=80" />
-                </div>
-                <div class="scroll-margin-inline-end">
-                  <img src="https://images.unsplash.com/photo-1622890806166-111d7f6c7c97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&h=160&q=80" />
-                </div>
-                <div class="scroll-margin-inline-end">
-                  <img src="https://images.unsplash.com/photo-1590523277543-a94d2e4eb00b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&h=160&q=80" />
-                </div>
-                <div class="scroll-m-2 snap-start ">
-                  <img src="https://images.unsplash.com/photo-1575424909138-46b05e5919ec?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&h=160&q=80" />
-                </div>
-              </div> -->
-
-
+              
             <div class="text-gray-700">
                 <h4 class="font-bold mt-12 pb-2 border-b border-blue-50">Latest recipes</h4>
                 
-                <div class="mt-8">
+                <div class="mt-8 grid lg:grid-cols-3 gap-10">
                     <!-- cards go here -->
                     <div class="card">
-                        <img src="img/thuanphuoc.jpg " class="h-50 w-full sm:h-70 object-cover"  alt="caurong">
+                        <img src="img/thuanphuoc.jpg " class="h-50 w-full sm:h-70 object-cover"  alt="thuanphuoc">
                         <div class="text-center" >
                             <span class=" text-gray-800 font-bold">Thuan Phuoc Bridge</span>
                       
                           <span class="block text-gray-400 italic"> Taken by Thu Tran</span>
                         </div>
-                        <div class="bg-slate-200 text-center text-secondary-200 text-xs uppercase font-bold rounded p-1  absolute top-0 ml-2 mt-2">
-                            <span> 25 mins</span>
+                        <div class="bradge">
+                            <span> 17/03/2019</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/ttl.jpg " class="h-50 w-full sm:h-70 object-cover"  alt="ttl">
+                        <div class="text-center" >
+                            <span class=" text-gray-800 font-bold">Tran Thi Ly Bridge</span>
+                      
+                          <span class="block text-gray-400 italic"> Taken by Thu Tran</span>
+                        </div>
+                        <div class="bradge">
+                            <span>29/04/2020</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/caurong.jpg " class="h-50 w-full sm:h-70 object-cover"  alt="caurong">
+                        <div class="text-center" >
+                            <span class=" text-gray-800 font-bold">Dragon Bridge</span>
+                      
+                          <span class="block text-gray-400 italic"> Taken by Thu Tran</span>
+                        </div>
+                        <div class="bradge">
+                            <span>01/02/2022</span>
                         </div>
                     </div>
                 </div>
@@ -96,15 +98,16 @@
                     <!-- cards go here -->
                     <!-- <p class="text-blue-600 md:text-green-600">
                         con cò
-                      </p> -->
+                      </p> bg-slate-200 text-center text-secondary-200 text-xs uppercase font-bold rounded p-1  absolute top-0 ml-2 mt-2-->
                 </div>
                 <div>
-                    <div class="bg-secondary-100 text-secondary-200" >
+                    <div class="bg-gray-200 text-secondary-200 p-1 " >
                         Load more
                     </div>
                 </div>
             </div>
         </main>
     </div>
+    
 </body>
 </html>
