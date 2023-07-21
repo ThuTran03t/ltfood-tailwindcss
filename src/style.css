@@ -11,3 +11,11 @@
 .bradge{
     @apply bg-slate-200 text-center text-secondary-200 text-xs uppercase font-bold rounded p-1  absolute top-0 ml-2 mt-2;
 }
+
+.btn{
+    @apply rounded-full py-2 px-3 uppercase text-xs font-bold cursor-pointer tracking-wider;
+}
+
+.menuleft{
+    @apply hover:text-black hover:font-bold
+} 
