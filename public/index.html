@@ -5,8 +5,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="../public/style.css">
 </head>
-
-<body class="text-lime-900 px-3 py-1 font-mono">
+<!-- relative overflow-hidden rounded-lg bg-cover bg-no-repeat p-12 text-center"
+  style="background-image: url('...'); height: 400p -->
+<body class="text-lime-900   font-mono  bg-cover  "    style="background-image: url('./img/thuanphuoc.jpg'); height: 100%">
     <div class="grid md:grid-cols-3 ">
         <!-- content -->
         <div class="md:col-span-1 md:flex md:justify-end">
@@ -14,7 +15,7 @@
                 <div class="flex justify-between items-center">
                     <h1 class="font-bold uppercase p-4 text-center text-2xl py-4">
                         <!-- uppercase: chuyển từ CHỮ CHƯA IN HOA sang CHỮ IN HOA -->
-                        <a href="/" class="hover:text-blue-600">Luyen Tap TailwindCSS</a>
+                        <a href="/" class="text-gray-950 hover:text-blue-700">Luyen Tap TailwindCSS</a>
                     </h1>
                     <div class="px-4 cursor-pointer md:hidden" id="burger">
                         <svg class="w-4 " 
@@ -27,7 +28,7 @@
                 </div>
                 <!-- ---------------- -->
                 <ul class="text-sm mt-6 hidden md:block text-gray-700  border-b border-blue-100  " id="menu">
-                    <li class="text-gray-700 font-bold py-1">
+                    <li class=" font-bold py-1">
                         
                         <a href="#" class=" px-4 flex justify-end border-r-2 border-white hover:border-primary" >
                             <span class="menuleft">Home</span>
@@ -85,30 +86,34 @@
         </div> 
 
         <!----------------------------------------------------end nav------------------------------------- -->
-        <main class=" py-6 px-9 bg-blue-50 md:col-span-2" >
-          <div class="text-gray-700 flex justify-end">
-                        <a href="#" class="btn bg-blue-600 text-white hover:bg-primary  hover:text-blue-100
+        <main class=" py-6 px-9 bg-blue-50 md:col-span-2 " >
+            
+ 
+          <div class="text-gray-700 flex justify-end py-2">
+                        
+                            <a href="#" class="btn bg-blue-600 text-white hover:bg-primary  hover:text-blue-100
                          morder-2 transition eas-out duration-500">Log In</a>
                         <a href="#" class=" btn bg-blue-600 text-white ml-3 morder-2 hover:bg-primary 
                        hover:text-blue-100 transition eas-out duration-500">Sign Up</a>
-                    </div>
+                       
+           </div>
             <!-- <div class="flex items-end">
                 <div class="bg-red-500 h-4 w-7"></div>
                 <div class="bg-blue-500 h-7 w-7"></div>
                 <div class="bg-green-500 h-9 w-7"></div>
             </div> -->
             <header>
-                <h2 class="text-gray-700 text-3xl">HO THI THU TRAN - LAYLA</h2>
+                <h2 class="text-gray-700 text-3xl font-bold ">HO THI THU TRAN - LAYLA 30603</h2>
                 <h3 class="font-bold uppercase py-4">PLACE TO TRAVEL IN VIET NAM</h3>
             </header>
               
             <div class="text-gray-700">
-                <h4 class="font-bold mt-12 pb-2 border-b border-blue-50">Latest recipes</h4>
+                <h4 class="font-bold mt-12 pb-2 border-b border-blue-50">The most beautiful spaces</h4>
                 
                 <div class="mt-8 grid lg:grid-cols-3 gap-10">
                     <!-- cards go here -->
                     <div class="card hover:shadow-lg">
-                        <img src="img/thuanphuoc.jpg " class="h-50 w-full sm:h-70 object-cover"  alt="thuanphuoc">
+                        <img src="img/thuanphuoc.jpg " class="h-80 w-full sm:h-70 object-cover hover:scale-75"  alt="thuanphuoc">
                         <div class="text-center" >
                             <span class=" text-gray-800 font-bold">Thuan Phuoc Bridge</span>
                       
@@ -124,7 +129,7 @@
                         </div>
                     </div>
                     <div class="card hover:shadow-lg">
-                        <img src="img/ttl.jpg " class="h-50 w-full sm:h-70 object-cover"  alt="ttl">
+                        <img src="img/ttl.jpg " class="h-80 w-full sm:h-70 object-cover hover:scale-75"  alt="ttl">
                         <div class="text-center" >
                             <span class=" text-gray-800 font-bold">Tran Thi Ly Bridge</span>
                       
@@ -139,7 +144,7 @@
                         </div>
                     </div>
                     <div class="card hover:shadow-lg">
-                        <img src="img/caurong.jpg " class="h-50 w-full sm:h-70 object-cover"  alt="caurong">
+                        <img src="img/caurong.jpg " class="h-80 w-full sm:h-70 object-cover hover:scale-75"  alt="caurong">
                         <div class="text-center" >
                             <span class=" text-gray-800 font-bold">Dragon Bridge</span>
                       
@@ -157,7 +162,7 @@
                 <div class="mt-8 grid lg:grid-cols-3 gap-10">
                     <!-- cards go here -->
                     <div class="card hover:shadow-lg">
-                        <img src="img/khamduc.jpg " class="h-50 w-full sm:h-70 object-cover"  alt="thuanphuoc">
+                        <img src="img/khamduc.jpg " class="h-80 w-full sm:h-70 object-cover hover:scale-75"  alt="thuanphuoc">
                         <div class="text-center" >
                             <span class=" text-gray-800 font-bold">Kham Duc - Phuoc Son</span>
                       
@@ -173,7 +178,7 @@
                         </div>
                     </div>
                     <div class="card hover:shadow-lg">
-                        <img src="img/hoian.jpg " class="h-50 w-full sm:h-70 object-cover"  alt="ttl">
+                        <img src="img/hoian.jpg " class="h-80 w-full sm:h-70 object-cover hover:scale-75"  alt="ttl">
                         <div class="text-center" >
                             <span class=" text-gray-800 font-bold">Hoi An - Quang Nam</span>
                       
@@ -188,7 +193,7 @@
                         </div>
                     </div>
                     <div class="card hover:shadow-lg">
-                        <img src="img/mykhe.jpg " class="h-50 w-full sm:h-70 object-cover"  alt="caurong">
+                        <img src="img/mykhe.jpg " class="h-80 w-full sm:h-70 object-cover hover:scale-75 "  alt="caurong">
                         <div class="text-center" >
                             <span class=" text-gray-800 font-bold">My Khe beach</span>
                       
@@ -212,33 +217,34 @@
                       </p> bg-slate-200 text-center text-secondary-200 text-xs uppercase font-bold rounded p-1  absolute top-0 ml-2 mt-2-->
                 </div>
                 <div class="flex justify-center">
-                    <div class="btn  bg-gray-400 text-black hover:scale-50 
+                    <div class="btn  bg-gray-400 text-black hover:bg-blue-700 hover:text-white
                     " >
                         Load more
                     </div>
                 </div>
             </div>
+
             <!-- -----------------------------------footer--------------------------------- -->
             <div>
                             
                 <footer class="bg-gray-100 mx-0">
-                    <div class="mx-auto max-w-screen-xl  pb-8 pt-16 sm:px-6 lg:px-8">
+                    <div class="mx-auto max-w-screen-xl  pb-8 pt-3 ">
                     <div class="mx-auto max-w-md">
                         <strong
-                        class="block text-center text-xl font-bold text-gray-900 sm:text-3xl"
+                        class="block text-center text-xl font-bold text-gray-900 sm:text-2xl"
                         >
-                        Want us to email you with the latest blockbuster news?
+                        The places you want to explore, the things you want to do. Do it and no one can stop you.
                         </strong>
                 
                         <form class="mt-6">
-                        <div class="relative max-w-lg">
+                        <div class="relative max-w-lg ">
                             <label class="sr-only" for="email"> Email </label>
                 
                             <input
-                            class="w-full rounded-full border-gray-200 bg-gray-100 p-4 pe-32 text-sm font-medium"
+                            class="w-full rounded-full border-gray-300 bg-white p-4 pe-32 text-sm font-medium"
                             id="email"
                             type="email"
-                            placeholder="john@doe.com"
+                            placeholder="thutran0603@gamil.com"
                             />
                 
                             <button
@@ -254,9 +260,10 @@
                     <div class="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-32">
                         <div class="mx-auto max-w-sm lg:max-w-none">
                         <p class="mt-4 text-center text-gray-500 lg:text-left lg:text-lg">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium
-                            natus quod eveniet aut perferendis distinctio iusto repudiandae,
-                            provident velit earum?
+                            Customers themselves, customers will be able to follow their own passion. 
+                            What happens to people who don't follow their passions, 
+                            do they risk everything to achieve their desires?
+
                         </p>
                 
                         <div class="mt-6 flex justify-center gap-4 lg:justify-start">
